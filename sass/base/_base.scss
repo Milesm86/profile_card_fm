@@ -1,0 +1,139 @@
+// Color variables
+$color-dark-cyan: #19a2ae;
+$color-dark-blue: #2d3248;
+$color-gray-blue: #6a6f81;
+$color-dark-gray: #969696;
+$color-navy: #3e52a3;
+
+// Google Font
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+// Font size:
+$font-size: 1.125rem; // 18px
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: $font-size;
+  font-family: "Kumbh Sans", sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-color: $color-dark-cyan;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 400px;
+  height: 425px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  z-index: 99;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__header-bg {
+    width: 100%;
+    height: 170px;
+    background-color: $color-dark-cyan;
+    background-image: url(/images/bg-pattern-card.svg);
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    & h3 {
+      margin-top: 70px;
+      font-weight: 700;
+      color: $color-dark-blue;
+    }
+
+    & p {
+      color: $color-dark-gray;
+      font-weight: 400;
+      margin: 10px 0 20px 0;
+    }
+  }
+
+  &__content-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-top: 1px solid lightgray;
+    margin-top: 10px;
+    padding: 0 10px 0 10px;
+  }
+}
+
+.age {
+  color: $color-dark-gray;
+  font-weight: 400;
+}
+
+.user-img {
+  position: absolute;
+  border: 6px solid whitesmoke;
+  border-radius: 100%;
+  top: -40%;
+}
+
+.footer-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.footer-item h5 {
+  color: $color-dark-blue;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.footer-item p {
+  color: $color-dark-gray;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+  margin-top: 50px;
+}
+.attribution a {
+  color: $color-navy;
+}
+
+// Media queries for small screen sizes
+@media only screen and (max-width: 400px) {
+  .container {
+    max-width: 90%;
+  }
+}

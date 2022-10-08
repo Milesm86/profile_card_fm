@@ -1,0 +1,27 @@
+{
+  "name": "profile_card",
+  "version": "1.0.0",
+  "description": "Profile Card Frontend Mentor",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server --browser=firefox",
+    "start": "npm-run-all --parallel devserver watch:sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Milesm86/profile_card_fm.git"
+  },
+  "author": "Marcus Miles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Milesm86/profile_card_fm/issues"
+  },
+  "homepage": "https://github.com/Milesm86/profile_card_fm#readme",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
