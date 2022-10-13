@@ -26,8 +26,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Live Site URL: [Solution](https://milesm86.github.io/profile_card_fm/)
-- Solution URL: [Github pages link](https://www.frontendmentor.io/solutions/profile-card-using-css-flexbox--7up-YlJkU)
+- Live Site URL: [Github pages link](https://milesm86.github.io/profile_card_fm/)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/profile-card-using-css-flexbox--7up-YlJkU)
 
 ### Built with
 
